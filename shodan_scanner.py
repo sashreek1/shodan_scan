@@ -1,7 +1,7 @@
 
 import shodan
 
-a = shodan.Shodan("52rDOkRLNK2SYXva9neJvNYlpPNDLmQh")
+a = shodan.Shodan("API_KEY")
 while True:
     print(
         """
