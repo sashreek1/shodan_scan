@@ -1,7 +1,8 @@
 
+
 import shodan
 
-a = shodan.Shodan("API_KEY")
+a = shodan.Shodan("52rDOkRLNK2SYXva9neJvNYlpPNDLmQh")
 while True:
     print(
         """
@@ -16,10 +17,10 @@ while True:
         s = input("what would you like to search ? ")
         results = a.search(s)
         for result in results['matches']:
-            print( result["ip_str"]+"\t",end = '')
-            print(str(result["port"])+"\t",end = '')
-            print( result["org"]+"\t",end = '')
-            print(result["location"]["country_name"]+"\t",end = '')
+            print( result["ip_str"],"\t",end = '')
+            print(str(result["port"]),"\t",end = '')
+            print( result["org"],"\t",end = '')
+            print(result["location"]["country_name"],"\t",end = '')
             print()
             print()
     if x == 3:
